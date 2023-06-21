@@ -13,4 +13,4 @@ spring:
     username: postgres
     password: pass
   liquibase:
-    enabled: false
+    change-log: classpath:/db/db.changelog-master.yaml

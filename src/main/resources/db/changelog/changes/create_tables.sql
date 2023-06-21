@@ -67,3 +67,9 @@ CREATE TABLE orders
     FOREIGN KEY (id_user) REFERENCES users (id),
     FOREIGN KEY (id_admin) REFERENCES users (id)
     );
+
+INSERT INTO roles (id, role) VALUES (1, 'ROLE_ADMIN'), (2, 'ROLE_USER');
+
+INSERT INTO extra_users_data (passport_number, name, lastname, birthdate, driving_license, phone, register_date) VALUES (null, null, null, null, null, null, null);
+
+INSERT INTO users (login, password, id_role, id_extra_users_data) VALUES ('admin', 'pass', 1, 1);

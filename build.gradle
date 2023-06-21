@@ -5,8 +5,10 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
 
+springBoot {
+    mainClass = "com.example.rentservice.RentServiceApplication"
+}
 java {
     sourceCompatibility = '17'
 }

@@ -31,27 +31,26 @@ public class CarController {
                                              Integer id) {
         return carService.getCarDescription(id);
     }
-
     @Operation(
             summary = "Cars presentation",
             description = "Returns short cars description and filter it by params from request"
     )
-    @GetMapping("/presentation")
+    @PostMapping("/presentation")
     public List<CarInfoResp> getAllPresentation(
-            @Parameter(description = "Parameters for cars filtering")
-            CarFilterReq filter) {
-        return carService.getAllCarsPresentation(filter);
+            @RequestBody @Parameter(description = "Parameters for cars filtering")
+            CarFilterReq filterDto) {
+        return carService.getAllCarsPresentation(filterDto);
     }
 
     @Operation(
             summary = "Cars description",
             description = "Returns detailed cars description and filter it by params from request"
     )
-    @GetMapping("/description")
+    @PostMapping("/description")
     public List<CarDescriptionResp> getAllDescription(
-            @Parameter(description = "Parameters for cars filtering")
-            CarFilterReq filter) {
-        return carService.getAllCarsDescription(filter);
+            @RequestBody @Parameter(description = "Parameters for cars filtering")
+            CarFilterReq filterDto) {
+        return carService.getAllCarsDescription(filterDto);
     }
 
     @Operation(

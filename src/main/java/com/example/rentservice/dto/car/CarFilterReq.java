@@ -5,10 +5,9 @@ import lombok.*;
 
 import java.util.ArrayList;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
-@Getter
 @Builder
 @Schema(description = "Params for car filtering")
 public class CarFilterReq {

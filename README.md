@@ -45,3 +45,5 @@ This service consists of 4 controllers, each of which provides a wide variety of
 - **Install directory RunAndInstall** from my repository
 - **Run docker**
 - **Run run.bat in installed directory RunAndInstall**
+
+## *Swagger documentation (after all steps) http://localhost:8080/swagger-ui/index.html#

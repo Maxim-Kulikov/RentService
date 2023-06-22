@@ -35,3 +35,13 @@ This service consists of 4 controllers, each of which provides a wide variety of
 - **postgresql** provides postgres driver to interact with the database.
 - **springdoc-openapi-ui** provides a convenient graphical interface for making requests to the server and getting results.
 - **mapstruct** allows you to conveniently convert java objects of one type to another. I use this dependency to convert entities to dto and vice versa.
+
+## Project installing and running
+
+- **Install docker** https://docs.docker.com/engine/install/)https://docs.docker.com/engine/install/
+- **Install Java Development Kit 17** https://docs.oracle.com/en/java/javase/17/install/installation-jdk-microsoft-windows-platforms.html
+- **Install Gradle** https://gradle.org/install/
+- **Install and set up PostgreSQL image** https://habr.com/ru/companies/first/articles/683874/
+- **Install directory RunAndInstall** from my repository
+- **Run docker**
+- **Run run.bat in installed directory RunAndInstall**

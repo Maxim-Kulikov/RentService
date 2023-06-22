@@ -19,7 +19,7 @@ public interface UserService {
 
     UserExistedResp findByLogin(String login) throws UserNotFoundException;
 
-    UserExistedResp update(UserUpdateReq dto, Long id) throws UserNotFoundException;
+    UserExistedResp update(UserUpdateReq dto, Long id) throws UserNotFoundException, UserIsExistedException;
 
     UserExistedResp getExistedUser(Long id) throws UserNotFoundException;
 }

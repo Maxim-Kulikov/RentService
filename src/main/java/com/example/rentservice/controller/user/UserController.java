@@ -74,7 +74,7 @@ public class UserController {
     public UserExistedResp update(@RequestBody @Parameter(description = "Data for user updating")
                                   UserUpdateReq dto,
                                   @PathVariable @Parameter(description = "User id")
-                                  Long id) throws UserNotFoundException {
+                                  Long id) throws UserNotFoundException, UserIsExistedException {
         return userService.update(dto, id);
     }
 

@@ -72,8 +72,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public UserExistedResp update(UserUpdateReq dto, Long id) throws UserNotFoundException {
+    public UserExistedResp update(UserUpdateReq dto, Long id) throws UserNotFoundException, UserIsExistedException {
         User user = getUserOrThrowException(id);
+        if(userDao.findFirstByLogin(dto.getLogin()).isPresent()) {
+            throw new UserIsExistedException(dto.getLogin());
+        }
         user = updateUserWithChanger(user, dto);
         userDao.save(user);
         return userMapper.toUserExistedResp(user);

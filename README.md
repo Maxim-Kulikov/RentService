@@ -1,8 +1,8 @@
-<h1 align="center">Rent Service</h1>
+ <h1 align="center">Rent Service</h1>
 
 ## About the project
 
-**Let's start by describing the purpose of the project**
+**Purpose of the project**
 
 This is a rest service that allows you to save objects of such types as a car, a user, additional user data, a car rental order. This application will be a good basis for further creation of a real car rental service.
 

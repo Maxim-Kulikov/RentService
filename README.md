@@ -38,7 +38,7 @@ This service consists of 4 controllers, each of which provides a wide variety of
 
 ## Project installing and running
 
-- **Install docker** https://docs.docker.com/engine/install/)https://docs.docker.com/engine/install/
+- **Install docker** https://docs.docker.com/engine/install/
 - **Install Java Development Kit 17** https://docs.oracle.com/en/java/javase/17/install/installation-jdk-microsoft-windows-platforms.html
 - **Install Gradle** https://gradle.org/install/
 - **Install and set up PostgreSQL image** https://habr.com/ru/companies/first/articles/683874/

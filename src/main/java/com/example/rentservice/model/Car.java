@@ -33,9 +33,6 @@ public class Car {
         return new Changer();
     }
 
-    /**
-     * like builder but changer
-     */
     public class Changer {
 
         private Changer() {

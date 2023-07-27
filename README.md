@@ -1,8 +1,8 @@
-<h1 align="center">Rent Service</h1>
+ <h1 align="center">Rent Service</h1>
 
 ## About the project
 
-**Let's start by describing the purpose of the project**
+**Purpose of the project**
 
 This is a rest service that allows you to save objects of such types as a car, a user, additional user data, a car rental order. This application will be a good basis for further creation of a real car rental service.
 
@@ -38,10 +38,12 @@ This service consists of 4 controllers, each of which provides a wide variety of
 
 ## Project installing and running
 
-- **Install docker** https://docs.docker.com/engine/install/)https://docs.docker.com/engine/install/
+- **Install docker** https://docs.docker.com/engine/install/
 - **Install Java Development Kit 17** https://docs.oracle.com/en/java/javase/17/install/installation-jdk-microsoft-windows-platforms.html
 - **Install Gradle** https://gradle.org/install/
 - **Install and set up PostgreSQL image** https://habr.com/ru/companies/first/articles/683874/
 - **Install directory RunAndInstall** from my repository
 - **Run docker**
 - **Run run.bat in installed directory RunAndInstall**
+
+## *Swagger documentation (after all steps) http://localhost:8080/swagger-ui/index.html#
